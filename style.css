@@ -233,7 +233,39 @@ h1 span {
     color: rgba(52, 48, 69, 1);
     border: none;
 }
-.hero-footer,
+.hero-footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    background: radial-gradient(50% 2900.76% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211e2e 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    padding: 4rem;
+    border-radius: 90px;
+    margin-top: 3rem;
+    color: rgba(255, 255, 255, 1);
+}
+
 .hero-footer div {
     display: flex;
+    gap: 0.8rem;
 }
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side {
+    margin: auto;
+}
+
+.right-side i {
+    font-size: 50px;
+    background: linear-gradient(90deg, #8176af 0%, #c0b7e8 100%);
+    -webkit-background-clip: text; /* Makes gradient visible in text */
+    -webkit-text-fill-color: transparent; /* Makes text transparent */
+    background-clip: text; /* Standard property */
+}
+
+/* About section starts here */
